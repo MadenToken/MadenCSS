@@ -1,0 +1,63 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+/* Solid primary button */
+.button-primary {
+  background-color: var(--primary);
+  color: var(--on-primary);
+}
+
+.button-primary:hover {
+  opacity: 0.9;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Secondary solid button */
+.button-secondary {
+  background-color: var(--secondary);
+  color: var(--on-secondary);
+}
+
+.button-secondary:hover {
+  opacity: 0.9;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Text button (no background, like ghost button) */
+.button-text {
+  background-color: transparent;
+  color: var(--primary);
+}
+
+.button-text:hover {
+  background-color: rgba(255,255,255,0.05);
+}
+
+/* Outlined button */
+.button-outline {
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.button-outline:hover {
+  background-color: rgba(255,255,255,0.05);
+}
+
+/* Disabled style */
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
