@@ -1,23 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
   <meta charset="UTF-8" />
-  <title>MadenCSS Documentation</title>
-  <link rel="stylesheet" href="../MadenCSS/main.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MadenCSS Grid Demo</title>
+  <link rel="stylesheet" href="../styles/main.css" />
 </head>
 <body>
-  <h1>Welcome</h1>
-  <p>Main components will be here</p>
 
-<section>
-  <h2>Button Component</h2>
+<div class="container bg-red-1">
+  <div class="row bg-red-2">
+    <div class="col col-1 bg-red-3">Kolon 1</div>
+    <div class="col col-2 bg-red-4">Kolon 2</div>
+    <div class="col col-3 bg-red-0">Kolon 3</div>
+    <div class="col col-4 bg-red-3">Kolon 4</div>
+    <div class="col col-5 bg-red-4">Kolon 5</div>
+    <div class="col col-6 bg-red-0">Kolon 6</div>
+    <div class="col col-7 bg-red-3">Kolon 7</div>
+    <div class="col col-8 bg-red-4">Kolon 8</div>
+    <div class="col col-9 bg-red-0">Kolon 9</div>
+    <div class="col col-10 bg-red-3">Kolon 10</div>
+    <div class="col col-11 bg-red-4">Kolon 11</div>
+    <div class="col col-12 bg-red-0">Kolon 12</div>
+  </div>
+</div>
 
-  <button class="btn">Primary Button</button>
+<div class="container bg-blue-3">
+  <div class="row bg-blue-0">
+    <div class="col res-col-6 bg-blue-1">Mobilde tam genişlik, tablet ve üstü %50</div>
+    <div class="col res-col-6 bg-blue-2">Mobilde tam genişlik, tablet ve üstü %50</div>
+  </div>
+</div>
 
-  <h3>Usage</h3>
-  <pre><code>&lt;button class="btn"&gt;Primary Button&lt;/button&gt;</code></pre>
-</section>
-  
-  
+
+<button class="button button-primary">Primary</button>
+<button class="button button-secondary">Secondary</button>
+<button class="button button-text">Text</button>
+<button class="button button-outline">Outline</button>
+<button class="button button-primary" disabled>Disabled</button>
+
+<br><br><br><br>
+
+<div class="row row-items-hor-center">
+<div class="col res-col-6">
+<div class="form-group">
+    <label for="username">Kullanıcı Adı</label>
+    <input type="text" id="username" placeholder="Kullanıcı adınızı girin" />
+  </div>
+
+  <div class="form-group">
+    <label for="email">E-posta</label>
+    <input type="email" id="email" placeholder="E-posta adresinizi girin" />
+  </div>
+
+  <div class="form-group">
+    <label for="password">Şifre</label>
+    <input type="password" id="password" placeholder="Şifrenizi girin" />
+  </div>
+
+  <div class="form-group">
+    <label for="bio">Hakkınızda</label>
+    <textarea id="bio" rows="4" placeholder="Kendinizi tanıtın"></textarea>
+  </div></div>
+</div>
 </body>
 </html>
