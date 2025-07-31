@@ -1,0 +1,46 @@
+/* Renk Değişkenleri */
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #50e3c2;
+  --text-color: #333;
+  --background-color: #fff;
+  --border-radius: 4px;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Temel Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  border-radius: var(--border-radius);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
