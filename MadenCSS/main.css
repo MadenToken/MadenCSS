@@ -1,24 +1,28 @@
 @import url("buttons.css");
 
 :root {
-  --background: #121212;
-  --surface: #1f1f1f;
-  --primary: #bb86fc;
-  --secondary:#02d9c3;
-  --on-background: #d9d9d9;
-  --on-surface: #e3e3e3;
+  --background: #181a20;
+  --surface: #1e2329;
+  --primary: #f0bb0c;       
+  --success: #0ecb81;     
+  --danger: #f6465d;       
+  --on-background: #eaecef; 
+  --on-surface: #cfd2dc;    
   --on-primary: #000;
-  --on-secondary: #000;
+  --on-success: #000;
+  --on-danger: #000;
 }
 
 .background{ background-color: var(--background);}
 .surface{ background-color: var(--surface);}
 .primary{background-color: var(--primary);}
-.secondary{background-color: var(--secondary);}
-.on-background{background-color: var(--on-background);}
-.on-surface{background-color: var(--on-surface);}
-.on-primary{background-color: var(--on-primary);}
-.on-secondary{background-color: var(--on-secondary);}
+.success{background-color: var(--success);}
+.danger{background-color: var(--danger);}
+.on-background{color: var(--on-background);}
+.on-surface{color: var(--on-surface);}
+.on-primary{color: var(--on-primary);}
+.on-success{color: var(--on-success);}
+.on-danger{color: var(--on-danger);}
 
 /* General Reset and styles */
 * {box-sizing: border-box;}
@@ -33,26 +37,22 @@ button { cursor: pointer; }
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 /* Row */
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -10px;
-  margin-right: -10px;
 }
 
-/* Horizontal alignment */
+/* Row Horizontal alignment */
 .row-items-hor-start   { justify-content: flex-start; }
 .row-items-hor-center  { justify-content: center; }
 .row-items-hor-end     { justify-content: flex-end; }
 .row-items-hor-between { justify-content: space-between; }
 .row-items-hor-around  { justify-content: space-around; }
 
-/* Vertical alignment */
+/* Row Vertical alignment */
 .row-items-ver-start   { align-items: flex-start; }
 .row-items-ver-center  { align-items: center; }
 .row-items-ver-end     { align-items: flex-end; }
@@ -60,8 +60,6 @@ button { cursor: pointer; }
 
 /* Column */
 .col {
-  padding-left: 10px;
-  padding-right: 10px;
   box-sizing: border-box;
   flex-basis: 100%;  
   max-width: 100%;
@@ -96,9 +94,7 @@ button { cursor: pointer; }
   .res-col-12 { flex: 0 0 100%;     max-width: 100%;     }
 }
 
-
 /* input.css */
-
 input,
 textarea,
 select {
@@ -130,3 +126,76 @@ textarea::placeholder {
   opacity: 0.6;
 }
 
+.navbar{
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  font-size: 1.2rem;
+}
+
+.navbar-logo{
+  font-size: 2rem;
+}
+
+.navbar-svg-wrapper {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-svg{
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a {
+  color: var(--on-surface);
+  margin: 0.5rem 1rem;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 4px;
+  padding: 0.4rem 0.8rem;
+}
+
+.navbar a:hover {
+  background-color: var(--primary);
+  color: var(--on-primary);
+}
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+@media (min-width: 601px) {
+  .navbar-svg-wrapper {
+    display: none;
+  }
+}
+
+.text-center{text-align: center;}
+
+.p-1  { padding: 0.5rem; }   /* 8px */
+.p-2  { padding: 1rem; }     /* 16px */
+.p-3  { padding: 1.5rem; }   /* 24px */
+.p-4  { padding: 2rem; }     /* 32px */
+
+.m-1  { margin: 0.5rem; }   /* 8px */
+.m-2  { margin: 1rem; }     /* 16px */
+.m-3  { margin: 1.5rem; }   /* 24px */
+.m-4  { margin: 2rem; }     /* 32px */
+
+.mt-1  { margin-top: 0.5rem; }   /* 8px */
+.mt-2  { margin-top: 1rem; }     /* 16px */
+.mt-3  { margin-top: 1.5rem; }   /* 24px */
+.mt-4  { margin-top: 2rem; }     /* 32px */
+
+.mb-1  { margin-bottom: 0.5rem; }   /* 8px */
+.mb-2  { margin-bottom: 1rem; }     /* 16px */
+.mb-3  { margin-bottom: 1.5rem; }   /* 24px */
+.mb-4  { margin-bottom: 2rem; }     /* 32px */
