@@ -14,8 +14,8 @@ document.getElementById("navbar").innerHTML = `
 document.getElementById("footer").innerHTML = `
 <div class="row surface on-surface mt-1">
   <div class="col-12 text-center p-3">
-    &copy; 2025 MADENIX all free to use
-    <a href="emptyTemplate.html">Empty Template</a>
+    <span class="text-primary">&copy;</span> 2025 MADENIX all free to use
+    <a href="emptyTemplate.html" class="text-primary">Empty Template</a>
   </div>
 </div>
 `;
