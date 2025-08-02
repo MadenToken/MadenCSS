@@ -3,9 +3,10 @@
 :root {
   --background: #181a20;
   --surface: #1e2329;
+  --surface-light: #272a2e;
   --primary: #f0bb0c;       
   --success: #0ecb81;     
-  --danger: #f6465d;       
+  --danger: #f6465d; 
   --on-background: #eaecef; 
   --on-surface: #cfd2dc;    
   --on-primary: #000;
@@ -115,6 +116,15 @@ button { cursor: pointer; }
 }
 
 .text-center{text-align: center;}
+.text-primary{color: var(--primary);}
+
+/* Font Size Classes with Clamp */
+.fs-sm  { font-size: clamp(0.75rem, 0.9vw, 0.875rem); }   /* 12–14px */
+.fs-base{ font-size: clamp(0.875rem, 1vw, 1rem); }        /* 14–16px */
+.fs-lg  { font-size: clamp(1rem, 1.2vw, 1.25rem); }       /* 16–20px */
+.fs-xl  { font-size: clamp(1.25rem, 1.5vw, 1.5rem); }     /* 20–24px */
+.fs-xxl { font-size: clamp(1.5rem, 2vw, 2.25rem); }       /* 24–36px */
+.fs-huge{ font-size: clamp(2rem, 3vw, 3rem); }            /* 32–48px */
 
 .p-1  { padding: 0.5rem; }   /* 8px */
 .p-2  { padding: 1rem; }     /* 16px */
@@ -136,13 +146,12 @@ button { cursor: pointer; }
 .mb-3  { margin-bottom: 1.5rem; }   /* 24px */
 .mb-4  { margin-bottom: 2rem; }     /* 32px */
 
-/* Font Size Classes with Clamp */
-.fs-sm  { font-size: clamp(0.75rem, 0.9vw, 0.875rem); }   /* 12–14px */
-.fs-base{ font-size: clamp(0.875rem, 1vw, 1rem); }        /* 14–16px */
-.fs-lg  { font-size: clamp(1rem, 1.2vw, 1.25rem); }       /* 16–20px */
-.fs-xl  { font-size: clamp(1.25rem, 1.5vw, 1.5rem); }     /* 20–24px */
-.fs-xxl { font-size: clamp(1.5rem, 2vw, 2.25rem); }       /* 24–36px */
-.fs-huge{ font-size: clamp(2rem, 3vw, 3rem); }            /* 32–48px */
+/* Border width */
+.border      { border: 1px solid var(--on-surface, #444); }
+.border-0    { border: none; }
+.border-1    { border-width: 1px solid var(--on-surface, #444); }
+.border-2    { border-width: 2px solid var(--on-surface, #444); }
+.border-3    { border-width: 3px solid var(--on-surface, #444); }
 
 .sticky-top {
   position: sticky;
@@ -155,9 +164,9 @@ button { cursor: pointer; }
 input,
 textarea,
 select {
-  background-color: var(--surface);
+  background-color: var(--surface-light);
   color: var(--on-surface);
-  border: 1.5px solid var(--primary);
+  border: 1.5px solid var(--on-surface);
   border-radius: 6px;
   padding: 0.5rem 0.75rem;
   font-size: 1rem;
@@ -171,10 +180,9 @@ select {
 input:focus,
 textarea:focus,
 select:focus {
-  border-color: var(--secondary);
+  border-color: var(--primary);
   box-shadow: 0 0 5px var(--secondary);
   color: var(--on-surface);
-  background-color: var(--surface);
 }
 
 input::placeholder,
