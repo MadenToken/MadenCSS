@@ -1,5 +1,5 @@
 document.getElementById("navbar").innerHTML = `
-<div class="row surface row-items-hor-center row-gutter-1" style="height: 50px;">
+<div class="row surface row-items-hor-center row-gutter-1 p-1">
   <!-- Logo -->
   <div class="col res-col-2 col-items-hor-center">
     <div style="color:#f0bb0c" class="fs-xxl"><a href="index.html">MADENIX</a></div>
