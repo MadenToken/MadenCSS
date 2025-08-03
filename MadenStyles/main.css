@@ -5,13 +5,16 @@
   --surface: #1e2329;
   --surface-light: #272a2e;
   --primary: #f0bb0c;       
-  --success: #0ecb81;     
+  --success: #0c9c65;     
   --danger: #f6465d; 
   --on-background: #eaecef; 
   --on-surface: #cfd2dc;    
   --on-primary: #000;
   --on-success: #000;
   --on-danger: #000;
+  --text-primary: #f0bb0c;
+  --text-success: #0ecb81;
+  --text-danger: #f6465d;
 }
 
 .background{ background-color: var(--background);}
@@ -24,6 +27,10 @@
 .on-primary{color: var(--on-primary);}
 .on-success{color: var(--on-success);}
 .on-danger{color: var(--on-danger);}
+.text-primary{color: var(--primary);}
+.text-success{color: var(--success);}
+.text-danger{color: var(--danger);}
+
 
 /* General Reset and styles */
 * {box-sizing: border-box;}
@@ -80,7 +87,18 @@ button { cursor: pointer; }
 .row-gutter-4 { gap: 2rem; }     /* 32px */
 
 /* Column */
-.col {
+.res-col-1,
+.res-col-2,
+.res-col-3,
+.res-col-4,
+.res-col-5,
+.res-col-6,
+.res-col-7,
+.res-col-8,
+.res-col-9,
+.res-col-10,
+.res-col-11,
+.res-col-12 {
   box-sizing: border-box;
   flex-basis: 100%;  
   max-width: 100%;
@@ -116,7 +134,7 @@ button { cursor: pointer; }
 }
 
 .text-center{text-align: center;}
-.text-primary{color: var(--primary);}
+
 
 /* Font Size Classes with Clamp */
 .fs-sm  { font-size: clamp(0.75rem, 0.9vw, 0.875rem); }   /* 12–14px */
