@@ -28,15 +28,7 @@ document.getElementById("leftMenu").innerHTML = `
     </ul>
     <h3 class="m-1 mt-3">COMPONENTS</h3>
     <ul class="m-1">
-      <li><a href="#">Alerts</a></li>
-      <li><a href="#">Buttons</a></li>
-      <li><a href="#">Cards</a></li>
-      <li><a href="#">Collapsible</a></li>
-      <li><a href="#">Forms</a></li>
-      <li><a href="#">Heros</a></li>
       <li><a href="#">Navbars</a></li>
-      <li><a href="#">Modals</a></li>
-      <li><a href="#">Tables</a></li>
     </ul>
 
     <h3 class="m-1 mt-3">UTULITIES</h3>
