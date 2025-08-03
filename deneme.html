@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Layout Açıklamaları</title>
+  <link rel="stylesheet" href="layout.css">
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #181a20;
+      color: #eaecef;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    h2 {
+      color: #f0bb0c;
+      margin-top: 2rem;
+    }
+    code {
+      background-color: #1e2329;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      color: #0ecb81;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📐 CSS Layout Açıklamaları</h1>
+
+  <h2>📦 .container</h2>
+  <p>Sayfa içeriğini ortalamak ve maksimum genişliği <code>1600px</code> ile sınırlandırmak için kullanılır.</p>
+
+  <h2>📏 .row</h2>
+  <p>Flex tabanlı yatay düzen oluşturur. İçerdiği sütunları yatay sıraya dizer.</p>
+
+  <h2>↔️ Yatay Hizalamalar</h2>
+  <ul>
+    <li><code>.row-items-hor-start</code>: Sola hizalar</li>
+    <li><code>.row-items-hor-center</code>: Ortalar</li>
+    <li><code>.row-items-hor-end</code>: Sağa hizalar</li>
+    <li><code>.row-items-hor-between</code>: Boşlukları aralara dağıtır</li>
+    <li><code>.row-items-hor-around</code>: Elemanların etrafına boşluk ekler</li>
+  </ul>
+
+  <h2>↕️ Dikey Hizalamalar</h2>
+  <ul>
+    <li><code>.row-items-ver-start</code>: Üste hizalar</li>
+    <li><code>.row-items-ver-center</code>: Ortalar</li>
+    <li><code>.row-items-ver-end</code>: Alta hizalar</li>
+    <li><code>.row-items-ver-stretch</code>: Yüksekliği doldurur</li>
+  </ul>
+
+  <h2>🧱 .col Sınıfları</h2>
+  <p>12 kolon sistemine dayanır. Örneğin:</p>
+  <ul>
+    <li><code>.col-6</code>: Genişliği %50 yapar</li>
+    <li><code>.col-3</code>: Genişliği %25 yapar</li>
+    <li><code>.col-12</code>: Tüm satırı kaplar (%100)</li>
+  </ul>
+
+  <h2>📱 Responsive (Mobil Uyumlu) Kolonlar</h2>
+  <p><code>.res-col-*</code> sınıfları 600px ve üzeri ekranlar için çalışır. Aynı 12 kolon sistemini takip eder.</p>
+
+  <h2>🧩 .row-gutter-* Sınıfları</h2>
+  <p>Kolonlar arası boşluk belirler:</p>
+  <ul>
+    <li><code>.row-gutter-1</code>: 8px</li>
+    <li><code>.row-gutter-2</code>: 16px</li>
+    <li><code>.row-gutter-4</code>: 32px</li>
+  </ul>
+
+  <h2>📐 Kolon İçeriği Hizalama</h2>
+  <p><strong>Dikkat:</strong> Bu sınıfların çalışması için <code>height</code> değeri verilmiş olmalıdır.</p>
+  <ul>
+    <li><code>.col-items-hor-center</code>: İçeriği yatayda ortalar</li>
+    <li><code>.col-items-ver-center</code>: İçeriği dikeyde ortalar</li>
+    <li><code>.col-items-ver-stretch</code>: Yüksekliği kaplatır</li>
+  </ul>
+
+  <h2>🎨 Yardımcı Sınıflar</h2>
+  <ul>
+    <li><code>.text-center</code>: Metni ortalar</li>
+    <li><code>.fs-sm</code>, <code>.fs-lg</code>: Farklı font büyüklükleri</li>
+    <li><code>.p-2</code>, <code>.m-3</code>, <code>.mt-4</code>: Padding ve margin kısayolları</li>
+    <li><code>.border</code>, <code>.border-2</code>: Çerçeve kalınlığı ayarları</li>
+  </ul>
+
+  <h2>📎 Diğer Öne Çıkanlar</h2>
+  <ul>
+    <li><code>.sticky-top</code>: Sayfa kayarken üstte sabit kalan öğe</li>
+    <li><code>.navbar</code>: Kaydırılabilir yatay menü</li>
+    <li><code>input, textarea</code>: Odaklandığında çerçevesi renklenecek şekilde tasarlanmıştır</li>
+  </ul>
+
+</body>
+</html>
