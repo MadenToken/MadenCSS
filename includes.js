@@ -23,9 +23,8 @@ document.getElementById("footer").innerHTML = `
 document.getElementById("leftMenu").innerHTML = `
     <h3 class="m-1">HOME</h3>
     <ul class="m-1">
-      <li><a href="#">Get Started</a></li>
-      <li><a href="#">Grids</a></li>
-      <li><a href="#">Colors</a></li>
+      <li><a href="index.html">Get Started</a></li>
+      <li><a href="layout.html">Layout</a></li>
     </ul>
     <h3 class="m-1 mt-3">COMPONENTS</h3>
     <ul class="m-1">
@@ -38,5 +37,12 @@ document.getElementById("leftMenu").innerHTML = `
       <li><a href="#">Navbars</a></li>
       <li><a href="#">Modals</a></li>
       <li><a href="#">Tables</a></li>
+    </ul>
+
+    <h3 class="m-1 mt-3">UTULITIES</h3>
+    <ul class="m-1">
+      <li><a href="#">Font Sizes</a></li>
+      <li><a href="#">Margin, Padding</a></li>
+      <li><a href="#">Borders</a></li>
     </ul>
 `;
