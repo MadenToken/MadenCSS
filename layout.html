@@ -93,11 +93,18 @@
               📌 <b>Usage:</b><br />
               Add one of the .row-gutter-* classes to a .row element.<br/>
               <br/>
-              The number indicates the size of the horizontal and vertical spacing between columns (in rem units).
+              The number indicates the size of the horizontal and vertical spacing between columns (in rem units).<br/>
+            .row-gutter-0 { gap: 0; }<br/>
+            .row-gutter-1 { gap: 0.5rem; }   /* 8px */<br/>
+            .row-gutter-2 { gap: 1rem; }     /* 16px */<br/>
+            .row-gutter-3 { gap: 1.5rem; }   /* 24px */<br/>
+            .row-gutter-4 { gap: 2rem; }     /* 32px */<br/>
           </p>
           
-          <div class="row p-3 border mt-2 on-primary">
-            burada kaldın
+          <div class="row p-3 border mt-2 on-primary .row-gutter-2">
+            <div class="col-4">Colum 1</div>
+            <div class="col-4">Colum 2</div>
+            <div class="col-4">Colum 3</div>
           </div>
         </section>
       </main>
