@@ -1,4 +1,5 @@
-@import url("buttons.css");
+@import url("spacing..css");
+@import url("typography.css");
 
 :root {
   --background: #181a20;
@@ -132,37 +133,6 @@ button { cursor: pointer; }
   .res-col-11 { flex: 0 0 91.6667%; max-width: 91.6667%; }
   .res-col-12 { flex: 0 0 100%;     max-width: 100%;     }
 }
-
-.text-center{text-align: center;}
-
-
-/* Font Size Classes with Clamp */
-.fs-sm  { font-size: clamp(0.75rem, 0.9vw, 0.875rem); }   /* 12–14px */
-.fs-base{ font-size: clamp(0.875rem, 1vw, 1rem); }        /* 14–16px */
-.fs-lg  { font-size: clamp(1rem, 1.2vw, 1.25rem); }       /* 16–20px */
-.fs-xl  { font-size: clamp(1.25rem, 1.5vw, 1.5rem); }     /* 20–24px */
-.fs-xxl { font-size: clamp(1.5rem, 2vw, 2.25rem); }       /* 24–36px */
-.fs-huge{ font-size: clamp(2rem, 3vw, 3rem); }            /* 32–48px */
-
-.p-1  { padding: 0.5rem; }   /* 8px */
-.p-2  { padding: 1rem; }     /* 16px */
-.p-3  { padding: 1.5rem; }   /* 24px */
-.p-4  { padding: 2rem; }     /* 32px */
-
-.m-1  { margin: 0.5rem; }   /* 8px */
-.m-2  { margin: 1rem; }     /* 16px */
-.m-3  { margin: 1.5rem; }   /* 24px */
-.m-4  { margin: 2rem; }     /* 32px */
-
-.mt-1  { margin-top: 0.5rem; }   /* 8px */
-.mt-2  { margin-top: 1rem; }     /* 16px */
-.mt-3  { margin-top: 1.5rem; }   /* 24px */
-.mt-4  { margin-top: 2rem; }     /* 32px */
-
-.mb-1  { margin-bottom: 0.5rem; }   /* 8px */
-.mb-2  { margin-bottom: 1rem; }     /* 16px */
-.mb-3  { margin-bottom: 1.5rem; }   /* 24px */
-.mb-4  { margin-bottom: 2rem; }     /* 32px */
 
 /* Border width */
 .border      { border: 1px solid var(--on-surface, #444); }

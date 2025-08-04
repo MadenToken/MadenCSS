@@ -28,13 +28,12 @@ document.getElementById("leftMenu").innerHTML = `
     </ul>
     <h3 class="m-1 mt-3">🧩COMPONENTS</h3>
     <ul class="m-1">
-      <li><a href="#">Navbars</a></li>
+      <li><a href="#">Coming soon</a></li>
     </ul>
 
     <h3 class="m-1 mt-3">🛠️UTULITIES</h3>
     <ul class="m-1">
-      <li><a href="#">Font Sizes</a></li>
-      <li><a href="#">Margin, Padding</a></li>
-      <li><a href="#">Borders</a></li>
+      <li><a href="#">Spacing</a></li>
+      <li><a href="#">Typography</a></li>
     </ul>
 `;
