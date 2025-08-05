@@ -28,16 +28,6 @@
 .fs-xxl   { font-size: clamp(1.5rem, 2vw, 2.25rem); }       /* 24–36px */
 .fs-huge  { font-size: clamp(2rem, 3vw, 3rem); }            /* 32–48px */
 
-/* Line Height */
-.lh-tight  { line-height: 1.2; }
-.lh-normal { line-height: 1.5; }
-.lh-loose  { line-height: 1.75; }
-
-/* Letter Spacing */
-.tracking-tight { letter-spacing: -0.5px; }
-.tracking-normal{ letter-spacing: 0; }
-.tracking-wide  { letter-spacing: 0.5px; }
-
 /* Truncate (text overflow ellipsis) */
 .truncate {
   white-space: nowrap;
