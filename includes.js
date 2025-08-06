@@ -11,6 +11,7 @@ document.getElementById("navbar").innerHTML = `
 </div>
 `;
 
+
 document.getElementById("footer").innerHTML = `
 <div class="row surface on-surface mt-1">
   <div class="col-12 text-center p-3">
@@ -29,6 +30,7 @@ document.getElementById("leftMenu").innerHTML = `
     <h3 class="m-1 mt-3">🧩COMPONENTS</h3>
     <ul class="m-1">
       <li><a href="alerts.html">Alerts</a></li>
+      <li><a href="buttons.html">Buttons</a></li>
       <li><a href="forms.html">Forms</a></li>
     </ul>
 

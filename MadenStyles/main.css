@@ -146,12 +146,24 @@ button { cursor: pointer; }
 .border-2 { border: 2px solid var(--on-surface, #444); }
 .border-3 { border: 3px solid var(--on-surface, #444); }
 
+/* Border Radius*/
+.radius-0   { border-radius: 0; }
+.radius-sm  { border-radius: 2px; }
+.radius     { border-radius: 4px; }      /* default */
+.radius-md  { border-radius: 6px; }
+.radius-lg  { border-radius: 8px; }
+.radius-xl  { border-radius: 12px; }
+.radius-2xl { border-radius: 16px; }
+.radius-full { border-radius: 9999px; }  /* for pills, circles */
+
 .sticky-top {
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
+
+/***************** ALERTSS ***********************************************************/
 
 .alert {
   padding: 1rem 1.25rem;
@@ -188,7 +200,7 @@ button { cursor: pointer; }
   border-color: var(--on-surface);
 }
 
-
+/***************** FROMSSS *****************************************************/
 .form-group {
   display: flex;
   flex-direction: column;
@@ -212,6 +224,8 @@ select {
   font-size: 1rem;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
   width: 100%;
+  white-space: pre;
+  overflow: auto;
 }
 
 input::placeholder,
@@ -244,3 +258,83 @@ input:invalid {
   font-size: 0.85rem;
   margin-top: 0.4rem;
 }
+
+
+/***************** BUTTONSS *************************************************/
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--on-primary);
+}
+
+.btn-success {
+  background-color: var(--success);
+  color: var(--on-success);
+}
+
+.btn-danger {
+  background-color: var(--danger);
+  color: var(--on-danger);
+}
+
+.btn-surface {
+  background-color: var(--surface-light);
+  color: var(--on-surface);
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.9;
+  box-shadow: 0 0 0 2px rgba(240, 187, 12, 0.2); /* örnek gölge */
+}
+
+.btn:disabled,
+.btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.btn-sm {
+  padding: 0.4rem 0.75rem;
+  font-size: 0.8rem;
+}
+
+.btn-lg {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  fill: currentColor;
+  display: inline-block;
+}
+
+.btn-icon-sm  { width: 0.75em; height: 0.75em; }
+.btn-icon-md  { width: 1em; height: 1em; }          /* default */
+.btn-icon-lg  { width: 1.5em; height: 1.5em; }
+.btn-icon-xl  { width: 2em; height: 2em; }
