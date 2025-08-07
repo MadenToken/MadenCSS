@@ -37,6 +37,10 @@
 .text-light{color: var(--on-surface);}
 .text-dark{color: var(--on-primary);}
 
+.link-primary:hover{
+  color: var(--primary);
+}
+
 
 /* General Reset and styles */
 * {box-sizing: border-box;}
@@ -338,3 +342,30 @@ input:invalid {
 .btn-icon-md  { width: 1em; height: 1em; }          /* default */
 .btn-icon-lg  { width: 1.5em; height: 1.5em; }
 .btn-icon-xl  { width: 2em; height: 2em; }
+
+/* NAVBAR HAMBURGER STYLING **************************************************************************/
+.nav-toggle-btn {
+  display: none;
+  cursor: pointer;
+}
+
+/* On mobile devices  */
+@media (max-width: 599px) {
+  .nav-toggle-btn {
+    display: block;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .nav-toggle:checked ~ .nav-menu {
+    max-height: 500px; /* Adjust with the menu content.  */
+  }
+}
