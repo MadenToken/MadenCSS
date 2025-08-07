@@ -2,7 +2,10 @@ document.getElementById("navbar").innerHTML = `
 <div class="row surface row-items-hor-center row-gutter-1 p-1">
   <!-- Logo -->
   <div class="res-col-2 col-items-hor-center">
-    <div style="color:#f0bb0c" class="fs-xxl"><a href="index.html">MADENIX</a></div>
+    <div class="fs-xxl text-primary row">
+      <img src="Logo.png" width="32">
+      <a href="index.html">Madenix</a>
+    </div>
   </div>
   <!-- Menu -->
   <div class="res-col-9 col-items-hor-center fs-xl">
@@ -32,6 +35,7 @@ document.getElementById("leftMenu").innerHTML = `
       <li><a href="alerts.html">Alerts</a></li>
       <li><a href="buttons.html">Buttons</a></li>
       <li><a href="forms.html">Forms</a></li>
+      <li><a href="navbars.html">Navbars</a></li>
     </ul>
 
     <h3 class="m-1 mt-3">🛠️UTULITIES</h3>
